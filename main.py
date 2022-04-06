@@ -47,7 +47,7 @@ def main():
                         total_amount += int(store['AMOUNT'])
                         stores_data.append(store_info)
 
-                data = {
+                product_data = {
                     'name': name,
                     'price': price,
                     'img': img,
@@ -56,7 +56,7 @@ def main():
                     'stores_data': stores_data
                 }
                 
-                json_data.append(data)
+                json_data.append(product_data)
         except:
             print('error')
         print(f'[PROGRESS] {i}/{pages_count} completed')
